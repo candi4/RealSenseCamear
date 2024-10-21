@@ -1,11 +1,10 @@
+# https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python#examples
+
 # First import the library
 import pyrealsense2 as rs
 
-
-
 # Create a context object. This object owns the handles to all connected realsense devices
 pipeline = rs.pipeline()
-config = rs.config()
 pipeline.start()
 
 try:
@@ -23,7 +22,7 @@ try:
                 if 0 < dist and dist < 1:
                     coverage[x//10] += 1
 
-            if y%20 == 19:
+            if y%20 is 19:
                 line = ""
                 for c in coverage:
                     line += " .:nhBXWW"[c//25]
