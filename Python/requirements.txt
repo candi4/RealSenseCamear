@@ -1,0 +1,8 @@
+# Use realsense camera
+pyrealsense2==2.53.1.4623
+
+# Visualize
+opencv-python
+
+# Image data
+numpy
